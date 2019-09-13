@@ -43,3 +43,23 @@ Math.floor()
 Math.random() //get a num greater than 0 and less than 0
 ```
 
+***
+
+Q1. why i=-15?
+
+```java
+int i=0xFFFFFFF1
+System.out.println("i")
+```
+
+Q2.  in updated JDK,the expression's return could be int, double, String, other data Packages.
+
+```java
+switch(expression){
+    case value1: statement1;
+    break;
+}
+```
+
+
+
