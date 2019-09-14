@@ -10,7 +10,11 @@ public class HelloWorld{
 }
 ````
 
-### 2. Relationship between basic data types and packages
+### 2. Data types:
+
+> **Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:**
+
+![RUNOOB 图标](https://static.javatpoint.com/images/java-data-types.png)
 
 >  Initial:
 >
@@ -27,9 +31,9 @@ public class HelloWorld{
 >
 > + Integer: 
 >
->   byteValue() : return byte     
+>   `byteValue()` : return byte     
 >
->   shortValue(): return short
+>   `shortValue()`: return short
 
 ### 3. Math method
 
@@ -52,7 +56,7 @@ int i=0xFFFFFFF1
 System.out.println("i")
 ```
 
-Q2.  In updated JDK, **int, double, String, other data Packages** could be used in the switch statement's expression.
+Q2.  In updated JDK, **`int, double, String, other classes`** could be used in the switch statement's expression.
 
 ```java
 switch(expression){
@@ -117,6 +121,7 @@ Point2: 200, 200
 
 ***
 
-### my feelings in first week:
+### My feelings in first week:
 
 Firstly, I learned three features of java: **encapsulation, inheritance, polymorphism**. I also learned how to code a java program. There are something different between java and C++. I think Java's grammar is more  precise. I hope in next week I will have a further learning in array and class.
+
