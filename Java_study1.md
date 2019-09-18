@@ -1,11 +1,11 @@
 <!-- vscode-markdown-toc -->
-	* 1. [1. My first program](#Myfirstprogram)
-	* 2. [2. Data types:](#Datatypes:)
-	* 3. [3. Math method](#Mathmethod)
-	* 4. [4. Creating object in java or C++:](#CreatingobjectinjavaorC:)
-		* 4.1. [*what is References to Objects in java?*](#whatisReferencestoObjectsinjava)
-		* 4.2. [NOTE](#NOTE)
-	* 5. [My feelings in first week:](#Myfeelingsinfirstweek:)
+* 1. [My first program](#Myfirstprogram)
+* 2. [ Data types:](#Datatypes:)
+* 3. [Math method](#Mathmethod)
+* 4. [ Creating object in java or C++:](#CreatingobjectinjavaorC:)
+	* 4.1. [ *what is References to Objects in java?*](#whatisReferencestoObjectsinjava)
+	* 4.2. [ NOTE](#NOTE)
+	* 4.3. [ My feelings in first week:](#Myfeelingsinfirstweek:)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -13,8 +13,7 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc --># Java study (1)
 
-
-###  1. <a name='Myfirstprogram'></a>1. My first program
+##  1. <a name='Myfirstprogram'></a>My first program
 
 ````java
 public class HelloWorld{
@@ -24,7 +23,7 @@ public class HelloWorld{
 }
 ````
 
-###  2. <a name='Datatypes:'></a>2. Data types:
+##  2. <a name='Datatypes:'></a> Data types:
 
 > **Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:**
 
@@ -49,7 +48,7 @@ public class HelloWorld{
 >
 >   `shortValue()`: return short
 
-###  3. <a name='Mathmethod'></a>3. Math method
+##  3. <a name='Mathmethod'></a>Math method
 
 ``` java
 Math.sqrt()
@@ -81,7 +80,7 @@ switch(expression){
 
 ***
 
-###  4. <a name='CreatingobjectinjavaorC:'></a>4. Creating object in java or C++:
+##  4. <a name='CreatingobjectinjavaorC:'></a> Creating object in java or C++:
 
 > In C++, we do not need to create ,using:
 >
@@ -100,7 +99,7 @@ switch(expression){
 >
 > After that, we can directly using `fp` to manipulate the new object.
 
-####  4.1. <a name='whatisReferencestoObjectsinjava'></a>*what is References to Objects in java?* 
+###  4.1. <a name='whatisReferencestoObjectsinjava'></a> *what is References to Objects in java?* 
 
 To understand this question, I list a text:
 
@@ -128,14 +127,14 @@ Point2: 200, 200
 
 `pt2` is a reference to the same object as `pt1`. Either variable can be used to refer to the object or to change its variables.
 
-####  4.2. <a name='NOTE'></a>NOTE
+###  4.2. <a name='NOTE'></a> NOTE
 
 - A *reference* is an address that indicates where an object's variables and methods are stored. You aren't actually using objects when you assign an object to a variable or pass an object to a method as an argument. You aren't even using copies of the objects. Instead, you're using references to those objects.
 - There are no explicit pointers or pointer arithmetic in Java, as there are in C and C++. By using references and Java arrays, however, most pointer capabilities are duplicated without many of their drawbacks.
 
 ***
 
-###  5. <a name='Myfeelingsinfirstweek:'></a>My feelings in first week:
+###  4.3. <a name='Myfeelingsinfirstweek:'></a> My feelings in first week:
 
 Firstly, I learned three features of java: **encapsulation, inheritance, polymorphism**. I also learned how to code a java program. There are something different between java and C++. I think Java's grammar is more  precise. I hope in next week I will have a further learning in array and class.
 
