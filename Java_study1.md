@@ -1,5 +1,7 @@
 # Java study (1)
 
+[TOC]
+
 ### 1. My first program
 
 ````java
