@@ -1,3 +1,5 @@
+# Java study (1)
+
 <!-- vscode-markdown-toc -->
 * 1. [My first program](#Myfirstprogram)
 * 2. [ Data types:](#Datatypes:)
@@ -11,7 +13,8 @@
 	numbering=true
 	autoSave=true
 	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc --># Java study (1)
+<!-- /vscode-markdown-toc -->
+
 
 ##  1. <a name='Myfirstprogram'></a>My first program
 
