@@ -120,7 +120,10 @@ public class onther{
 - [例4.16](https://github.com/Scarlett-xu/Scarlett/blob/master/homework1/com.resourse/FighterPlane.java)
 
 - [例4.17](https://github.com/Scarlett-xu/Scarlett/blob/master/homework1/com.run/RunPlane2.java)
-- [习题9]()
+
+- [习题9](https://github.com/Scarlett-xu/Scarlett/blob/master/homework1/practice9.md)
+
+  
 
 
 
