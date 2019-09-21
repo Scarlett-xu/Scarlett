@@ -1,6 +1,6 @@
-## java study (2)
+# java study (2)
 
-### a. System class methods:(to be added)
+## 1. System class methods:(to be added)
 
 >`System.gc() ` : This method runs the garbage collector.
 >
@@ -11,7 +11,7 @@
 >```
 >
 
-### b. My project
+## 2. My project
 
 ```java
 public class reverse{
@@ -30,7 +30,7 @@ public class reverse{
 }
 ```
 
-### c. Some practice about class
+## 3. Some practice about class
 
 ```java
 class IntClass{ //don't need "public"?
@@ -57,55 +57,72 @@ public class IntClassConstructor{
 
   >*"Unless it's public, the class won't be visible to other code which isn't in the same package. The default accessibility (which can't be specified explicitly) is that a class (or other member) is only visible to other code within the same package."*
 
-### d.  Reference Types and Values
+## 4. compile of class
 
-In this chapter, the context is quoted from JDK document.
+```java
+package com.pa1;
+public class FightPlane
+{
+	private String name; //分配数据成员和空间
+	private int missileNum; //private成员只能在class里的函数使用
+	private static FightPlane fp; //静态数据成员，是一个对象
+	private FightPlane(String _name, int _missileNum) {//构造函数，私有的，所以该对象创建不可以在class外部
+		name = _name;
+		missileNum = _missileNum; //或者用this指向
+	}
+	public static FightPlane getInstance(String _name, int _missileNum) {
+		if (fp==null) {
+			fp = new FightPlane(_name,_missileNum);
+		}
+		return fp;
+	}
+}
+```
 
-> There are four kinds of *reference types*: **class types**, **interface types**, **type variables**, and **array types** .
->
-> ```java
-> class Point {
->     int x, y;
->     Point() { System.out.println("default"); }
->     Point(int x, int y) { this.x = x; this.y = y; }
-> 
->     /* A Point instance is explicitly created at 
->        class initialization time: */
->     static Point origin = new Point(0,0);
-> 
->     /* A String can be implicitly created 
->        by a + operator: */
->     public String toString() { return "(" + x + "," + y + ")"; }
-> }
-> 
-> class Test {
->     public static void main(String[] args) {
->         /* A Point is explicitly created
->            using newInstance: */
->         Point p = null;
->         try {
->             p = (Point)Class.forName("Point").newInstance();
->         } catch (Exception e) {
->             System.out.println(e);
->         }
-> 
->         /* An array is implicitly created 
->            by an array constructor: */
->         Point a[] = { new Point(0,0), new Point(1,1) };
-> 
->         /* Strings are implicitly created 
->            by + operators: */
->         System.out.println("p: " + p);
->         System.out.println("a: { " + a[0] + ", " + a[1] + " }");
->     
->         /* An array is explicitly created
->            by an array creation expression: */
->         String sa[] = new String[2];
->         sa[0] = "he"; sa[1] = "llo";
->         System.out.println(sa[0] + sa[1]);
->     }
-> }
-> ```
->
-> 
+
+
+```java
+package com.pa2;
+import com.pa1.*;
+public class RunPlane{
+	public static void main(String args[]) {
+		FightPlane fp;
+		fp = FightPlane.getInstance("scarlett", 18);
+	}
+}
+```
+
+In this Way, `FightPlane` can only create one object.
+
+## 5. NullPointerExpection
+
+A trying focus on creating object:
+
+ ```java
+package com.pa1;
+class app{
+	static int num;
+	public void show () {
+		System.out.println(num);
+	}
+}
+public class onther{
+	public static void main(String args[]) {
+		app ap = new app(); //if do not add this sentense,it will face NULLPointerExpection. and don't forget the parentheses
+		ap.show();
+		
+	}
+}
+ ```
+
+## 6. Homework
+
+- [例4.16](https://github.com/Scarlett-xu/Scarlett/blob/master/homework1/com.resourse/FighterPlane.java)
+
+- [例4.17](https://github.com/Scarlett-xu/Scarlett/blob/master/homework1/com.run/RunPlane2.java)
+- [习题9]()
+
+
+
+
 
